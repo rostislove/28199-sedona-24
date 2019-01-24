@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ростислав Тян](https://up.htmlacademy.ru/htmlcss/24/user/28199).
-* Наставник: [Егор Глебов](https://htmlacademy.ru/profile/beast).
+* Наставник: [Степан Нарышков](https://htmlacademy.ru/profile/id95962).
 
 ---
 
