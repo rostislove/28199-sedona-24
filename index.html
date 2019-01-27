@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <title>Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
+</head>
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="header-logo">
+        <img src="img/logo.svg" width="138" height="71" alt="Логотип">
+      </a>
+      <ul class="site-navigation">
+        <li><a href="info.html">Информация</a></li>
+        <li><a href="media.html">Фото и видео</a></li>
+        <li><a href="map.html">Карта штата</a></li>
+        <li><a href="hotels.html">Гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+  <main class="container">
+    <div class="hero">
+      <img src="img/hero.svg" width="458" height="358" alt="Добро пожаловать в Седону">
+    </div>
 
-  </body>
+    <section class="promo">
+      <h2 class="visually-hidden">Причины посетить Седону</h2>
+      <p class="promo-lead">Седона — небольшой городок в Аризоне,  заслуживающий большего!</p>
+      <p class="promo-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    </section>
+
+    <!-- здесь будет блок с причинами и преимуществами -->
+
+    <section class="booking">
+      <h2 class="visually-hidden">Поиск гостиницы</h2>
+      <p class="booking-lead">Заинтересовались?</p>
+      <p class="booking-text">Укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в седоне  </p>
+      <a class="btn btn-booking">Поиск гостиницы в Седоне</a>
+      <!-- здесь будет форма -->
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <p class="footer-hastag">#visitSEDONA</p>
+    <ul class="footer-social">
+      <li><a href="#" class="social-item-tw">Твиттер</a></li>
+      <li><a href="#" class="social-item-fb">Фейсбук</a></li>
+      <li><a href="#" class="social-item-youtube">Ютьюб</a></li>
+    </ul>
+    <p class="footer-copyright">
+      Website by 
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="http://placehold.it/115x41" width="115" height="41" alt="Логотип HTML Academy">
+      </a>
+    </p>
+  </footer>
+</body>
 </html>
