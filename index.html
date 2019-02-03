@@ -9,9 +9,7 @@
 <body>
   <header class="header">
     <nav class="navigation">
-      <a class="navigation__logo navigation__logo_main-page" href="index.html">
-        <img src="img/logo-sedona.svg" width="138" height="71" alt="Логотип Седоны">
-      </a>
+      <img class="navigation__logo" src="img/logo-sedona.svg" width="138" height="71" alt="Логотип Седоны">
       <ul class="navigation__list">
         <li><a href="info.html">Информация</a></li>
         <li><a href="media.html">Фото и видео</a></li>
@@ -38,8 +36,38 @@
       <h2 class="visually-hidden">Поиск гостиницы</h2>
       <p class="booking__lead">Заинтересовались?</p>
       <p class="booking__text">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;седоне</p>
-      <a aria-label="Открыть или скрыть форму для поиска гостиницы" class="btn booking__btn">Поиск гостиницы в Седоне</a>
-      <!-- здесь будет форма -->
+      <button type="button" aria-label="Открыть или скрыть форму для поиска гостиницы" class="btn booking__btn">Поиск гостиницы в Седоне</button>
+      <form class="booking__search" method="post" action="/echo">
+        <p>
+          <label for="check-in">Дата заезда:</label>
+          <input type="date" name="check-in" id="check-in" required>
+        </p>
+        <p>
+          <label for="check-out">Дата выезда:</label>
+          <input type="date" name="check-out" id="check-out" required>
+        </p>
+        <p class="booking__passengers">
+          <label for="adults">Взрослые:</label>
+          <a class="booking__passenger-control booking__adult_decrement" href="#">
+            <img src="img/icon-minus.svg" width="12" height="3" alt="Убрать взрослого">
+          </a>
+          <input type="number" min="1" step="1" id="adults" placeholder="1">
+          <a class="booking__passenger-control booking__adult_increment" href="#">
+            <img src="img/icon-plus.svg" width="11" height="11" alt="Добавить взрослого">
+          </a>
+        </p>
+        <p class="booking__passengers">
+          <label for="children">Дети:</label>
+          <a class="booking__passenger-control booking__children_decrement" href="#">
+            <img src="img/icon-minus.svg" width="12" height="3" alt="Убрать ребёнка">
+          </a>
+          <input type="number" min="0" step="1" id="children" placeholder="0">
+          <a class="booking__passenger-control booking__children_increment" href="#">
+            <img src="img/icon-plus.svg" width="11" height="11" alt="Добавить ребёнка">
+          </a>
+        </p>
+        <input type="submit" name="button" value="Найти" class="btn">
+      </form>
     </section>
   </main>
 
