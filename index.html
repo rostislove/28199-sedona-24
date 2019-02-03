@@ -7,12 +7,12 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="main-header">
-    <nav class="main-navigation">
-      <a class="header-logo">
-        <img src="img/logo-sedona.svg" width="138" height="71" alt="Логотип города Седона">
+  <header class="header">
+    <nav class="navigation">
+      <a class="navigation__logo navigation__logo_main-page" href="index.html">
+        <img src="img/logo-sedona.svg" width="138" height="71" alt="Логотип Седоны">
       </a>
-      <ul class="site-navigation">
+      <ul class="navigation__list">
         <li><a href="info.html">Информация</a></li>
         <li><a href="media.html">Фото и видео</a></li>
         <li><a href="map.html">Карта штата</a></li>
@@ -28,29 +28,29 @@
 
     <section class="promo">
       <h2 class="visually-hidden">Причины посетить Седону</h2>
-      <p class="promo-lead">Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне,  заслуживающий большего!</p>
-      <p class="promo-text">Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем гранд каньон!</p>
+      <p class="promo__lead">Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне,  заслуживающий большего!</p>
+      <p class="promo__text">Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем гранд каньон!</p>
     </section>
 
     <!-- здесь будет блок с причинами и преимуществами -->
 
     <section class="booking">
       <h2 class="visually-hidden">Поиск гостиницы</h2>
-      <p class="booking-lead">Заинтересовались?</p>
-      <p class="booking-text">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;седоне</p>
-      <a class="btn btn-booking">Поиск гостиницы в Седоне</a>
+      <p class="booking__lead">Заинтересовались?</p>
+      <p class="booking__text">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;седоне</p>
+      <a aria-label="Открыть или скрыть форму для поиска гостиницы" class="btn booking__btn">Поиск гостиницы в Седоне</a>
       <!-- здесь будет форма -->
     </section>
   </main>
 
-  <footer class="main-footer">
-    <p class="footer-hastag">#visitSEDONA</p>
-    <ul class="footer-social">
-      <li><a href="#" class="social-item social-item-tw">Твиттер</a></li>
-      <li><a href="#" class="social-item social-item-fb">Фейсбук</a></li>
-      <li><a href="#" class="social-item social-item-youtube">Ютьюб</a></li>
+  <footer class="footer">
+    <p class="footer__hastag">#visitSEDONA</p>
+    <ul class="footer__social">
+      <li><a href="#" class="footer__link footer__link_tw">Твиттер</a></li>
+      <li><a href="#" class="footer__link footer__link_fb">Фейсбук</a></li>
+      <li><a href="#" class="footer__link footer__link_youtube">Ютьюб</a></li>
     </ul>
-    <p class="footer-copyright">
+    <p class="footer__copyright">
       Website by 
       <a href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
