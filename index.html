@@ -9,9 +9,9 @@
 <body>
   <header class="header">
     <nav class="navigation">
-      <p class="navigation__logo navigation__logo_main-page">
+      <a class="navigation__logo navigation__logo_main-page">
         <img src="img/logo-sedona.svg" width="138" height="71" alt="Логотип Седоны">
-      </p>
+      </a>
       <ul class="navigation__list">
         <li><a href="info.html">Информация</a></li>
         <li><a href="media.html">Фото и видео</a></li>
@@ -50,23 +50,23 @@
         </p>
         <p class="booking__passengers">
           <label for="adults">Взрослые:</label>
-          <a class="booking__passenger-control booking__adult_decrement" href="#">
+          <button class="booking__passenger-control booking__adult_decrement" href="#">
             <img src="img/icon-minus.svg" width="12" height="3" alt="Убрать взрослого">
-          </a>
+          </button>
           <input type="number" min="1" step="1" id="adults" placeholder="1">
-          <a class="booking__passenger-control booking__adult_increment" href="#">
+          <button class="booking__passenger-control booking__adult_increment" href="#">
             <img src="img/icon-plus.svg" width="11" height="11" alt="Добавить взрослого">
-          </a>
+          </button>
         </p>
         <p class="booking__passengers">
           <label for="children">Дети:</label>
-          <a class="booking__passenger-control booking__children_decrement" href="#">
+          <button class="booking__passenger-control booking__children_decrement" href="#">
             <img src="img/icon-minus.svg" width="12" height="3" alt="Убрать ребёнка">
-          </a>
+          </button>
           <input type="number" min="0" step="1" id="children" placeholder="0">
-          <a class="booking__passenger-control booking__children_increment" href="#">
+          <button class="booking__passenger-control booking__children_increment" href="#">
             <img src="img/icon-plus.svg" width="11" height="11" alt="Добавить ребёнка">
-          </a>
+          </button>
         </p>
         <input type="submit" name="button" value="Найти" class="btn">
       </form>
